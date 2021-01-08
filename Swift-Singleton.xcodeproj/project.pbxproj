@@ -34,6 +34,7 @@
 		5549712A25A8C21D0014DB3B /* SClassA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5549712625A8C21D0014DB3B /* SClassA.swift */; };
 		5549712B25A8C21D0014DB3B /* SExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5549712725A8C21D0014DB3B /* SExample.swift */; };
 		5549712C25A8C21D0014DB3B /* SClassB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5549712825A8C21D0014DB3B /* SClassB.swift */; };
+		5549713425A8C8CD0014DB3B /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 5549713325A8C8CD0014DB3B /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		5549712625A8C21D0014DB3B /* SClassA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SClassA.swift; sourceTree = "<group>"; };
 		5549712725A8C21D0014DB3B /* SExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SExample.swift; sourceTree = "<group>"; };
 		5549712825A8C21D0014DB3B /* SClassB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SClassB.swift; sourceTree = "<group>"; };
+		5549713325A8C8CD0014DB3B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 		5549701125A8253A0014DB3B = {
 			isa = PBXGroup;
 			children = (
+				5549713325A8C8CD0014DB3B /* README.md */,
 				5549705025A826050014DB3B /* Swift-Packages */,
 				5549701C25A8253A0014DB3B /* Swift-Singleton */,
 				5549703325A8253B0014DB3B /* Swift-SingletonTests */,
@@ -390,6 +393,7 @@
 				5549712925A8C21D0014DB3B /* SHeavyClassC.swift in Sources */,
 				554970C325A848150014DB3B /* PreferenceHelper.swift in Sources */,
 				5549712A25A8C21D0014DB3B /* SClassA.swift in Sources */,
+				5549713425A8C8CD0014DB3B /* README.md in Sources */,
 				554970B925A846000014DB3B /* DummyTokenManager.swift in Sources */,
 				554970AD25A844AE0014DB3B /* Token.swift in Sources */,
 				5549711C25A8BDC50014DB3B /* STokenManager.swift in Sources */,

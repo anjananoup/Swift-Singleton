@@ -1,6 +1,6 @@
 # Swift-Singleton
 
-Singleton Patteren Example Step by Step using Swift
+Singleton Design Pattern Example Step by Step using Swift
 
 Content:
 1. Why We need Singleton

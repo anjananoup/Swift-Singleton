@@ -21,32 +21,31 @@ class DummyTokenManager {
     }()
     
     /// Dummy Token Creator
-    class func getNewToken() -> Token {
+    class func getNewToken(onUpdate: @escaping (Token) -> Void) {
         AppLogger.logInfo(message: "Get new Access Token")
-        let token = Token(accessToken: String.randomString(length: 16), timestamp: Int64(Date().timeIntervalSince1970))
-        sleep(5) // Sleep for 5s
-        AppLogger.logInfo(message: "Latest Access Token: \(token)")
-        
-        saveLatestToken(token: token)
-        
-        return token
+        DispatchQueue.global(qos: .userInitiated).asyncAfter(deadline: .now() + .seconds(5)) { // Dummy Async Operation for 5s
+            let token = Token(accessToken: String.randomString(length: 16), timestamp: Int64(Date().timeIntervalSince1970))
+            saveLatestToken(token: token)
+            AppLogger.logInfo(message: "Latest Access Token: \(token)")
+            onUpdate(token)
+        }
     }
     
     private class func saveLatestToken(token: Token) {
         PreferenceHelper.putString(key: tokenKey, value: "\(token.accessToken).\(token.timestamp)")
     }
     
-    private class func getLatestToken() -> Token? {
+    class func getLatestToken() -> Token {
         let tokenStr = PreferenceHelper.getString(key: tokenKey)
         if tokenStr.isEmpty {
             AppLogger.logError(message: "Token Information is nil")
-            return nil
+            return Token(accessToken: "Nil", timestamp: -1)
         }
         
         let tokenElement = tokenStr.split(separator: ".")
         if tokenElement.count < 2 {
             AppLogger.logError(message: "Token Information is wrong")
-            return nil
+            return Token(accessToken: "Nil", timestamp: -1)
         }
         
         let token = Token(accessToken: String(tokenElement[0]), timestamp: Int64(tokenElement[1]) ?? 0)
@@ -55,11 +54,6 @@ class DummyTokenManager {
     }
     
     class func isLatestToken(token: Token) -> Bool {
-        guard let lastestToken = getLatestToken() else {
-            AppLogger.logInfo(message: "No Stored token found. Return false.")
-            return false
-        }
-        
-        return lastestToken == token
+        return getLatestToken() == token
     }
 }

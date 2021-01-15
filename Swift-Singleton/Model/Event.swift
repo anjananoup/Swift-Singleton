@@ -8,6 +8,7 @@
 import Foundation
 
 protocol TokenEvent {
-    func doRefreshEvent()
+    func doRefreshEvent(onComplete: @escaping () -> Void)
     func isValidToken() -> Bool
+    func printToken()
 }

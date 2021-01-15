@@ -22,12 +22,12 @@ class Token: Comparable {
     }
     
     static func == (lhs: Token, rhs: Token) -> Bool {
-        return lhs.accessToken == rhs.accessToken && lhs.timestamp == rhs.timestamp
+        return lhs.accessToken.elementsEqual(rhs.accessToken) && lhs.timestamp == rhs.timestamp
     }
 }
 
 extension Token: CustomStringConvertible {
     var description: String {
-        "Token: \(accessToken), Update Timestamp: \(timestamp)"
+        "Token: \(accessToken), Update Timestamp: \(timestamp), Object Reference: \(ObjectIdentifier(self))"
     }
 }

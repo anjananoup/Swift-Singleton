@@ -14,6 +14,7 @@ class ViewController: UIViewController, UILogger {
     
     @IBOutlet weak var logTxt: UITextView!
     @IBAction func doSomethingBtn(_ sender: Any) {
+        self.clearLog()
         DispatchQueue.global(qos: .userInitiated).async { [weak self] in
             self?.example?.runExample()
         }
@@ -27,7 +28,10 @@ class ViewController: UIViewController, UILogger {
         AppLogger.logInfo(message: "App Started")
         
 //        example = NSExample()
-        example = SExample()
+//        example = SExample()
+//        example = MTPExample()
+//        example = MTSExample()
+        example = SAExample()
         
         
         // Add UI Logger

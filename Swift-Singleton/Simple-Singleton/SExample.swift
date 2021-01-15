@@ -15,34 +15,41 @@ class SExample: Example {
     private weak var uiLogger: UILogger?
     
     init() {
-        self.objA = SClassA()
-        self.objB = SClassB()
-        self.heavyObjC = SHeavyClassC()
+        self.objA = SClass()
+        self.objB = SClass()
+        self.heavyObjC = SHeavyClass()
     }
     
     func runExample() {
         checkLatest()
         
-//        DispatchQueue.global(qos: .userInitiated).asyncAfter(deadline: .now() + .seconds(5)) { [weak self] in
-//            self?.objA.doRefreshEvent()
-//            self?.checkLatest()
-//        }
-
         DispatchQueue.global(qos: .userInitiated).asyncAfter(deadline: .now() + .seconds(5)) { [weak self] in
-            self?.objB.doRefreshEvent()
-            self?.checkLatest()
+            self?.objA.doRefreshEvent(onComplete: { [weak self] in
+                self?.checkLatest()
+            })
         }
 
-//        DispatchQueue.global(qos: .userInitiated).asyncAfter(deadline: .now() + .seconds(5)) { [weak self] in
-//            self?.heavyObjC.doRefreshEvent()
-//            self?.checkLatest()
-//        }
+        DispatchQueue.global(qos: .userInitiated).asyncAfter(deadline: .now() + .seconds(6)) { [weak self] in
+            self?.objB.doRefreshEvent(onComplete: { [weak self] in
+                self?.checkLatest()
+            })
+        }
+
+        DispatchQueue.global(qos: .userInitiated).asyncAfter(deadline: .now() + .seconds(7)) { [weak self] in
+            self?.heavyObjC.doRefreshEvent(onComplete: { [weak self] in
+                self?.checkLatest()
+            })
+        }
     }
     
     private func checkLatest() {
         uiLogger?.printLog(log: "ObjA isContain latest info: \(objA.isValidToken())")
         uiLogger?.printLog(log: "ObjB isContain latest info: \(objB.isValidToken())")
         uiLogger?.printLog(log: "HeavyObjC isContain latest info: \(heavyObjC.isValidToken())")
+        
+        objA.printToken()
+        objB.printToken()
+        heavyObjC.printToken()
     }
     
     func addUILogger(logger: UILogger) {

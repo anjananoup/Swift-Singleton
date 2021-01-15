@@ -7,6 +7,8 @@
 
 import Foundation
 
+//static let instance = STokenManager()
+
 class STokenManager {
     private(set) var token: Token
     static let instance = STokenManager()
@@ -15,8 +17,14 @@ class STokenManager {
         self.token = DummyTokenManager.defaultToken
     }
     
+//    private init() {
+//        self.token = DummyTokenManager.defaultToken
+//    }
+    
     func updateToken() {
-        self.token = DummyTokenManager.getNewToken()
+        DummyTokenManager.getNewToken(onUpdate: { [weak self] token in
+            self?.token = token
+        })
     }
     
     func isLatestToken() -> Bool {

@@ -21,14 +21,12 @@ import Foundation
     }
 }
 
-class Test {
-    var mutex: pthread_mutex_t = pthread_mutex_t()
-    init() {
-    }
+protocol SyncObj: AnyObject {
+    var mutex: pthread_mutex_t { get set }
 }
 
-private extension Test {
-   func sync_same_file<R>(execute: () throws -> R) rethrows -> R {
+extension SyncObj {
+   func syncTask<R>(execute: () throws -> R) rethrows -> R {
       pthread_mutex_lock(&mutex)
       defer { pthread_mutex_unlock(&mutex) }
       return try execute()

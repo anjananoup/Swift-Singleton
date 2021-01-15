@@ -1,13 +1,14 @@
 //
-//  NSClassA.swift
+//  NSClass.swift
 //  Swift-Singleton
 //
 //  Created by Anjan Kumar Majumder on 1/8/21.
 //
 
 import Foundation
+import AppLogger
 
-class NSClassA: TokenEvent {
+class NSClass: TokenEvent {
     private let tokenManager: NSTokenManager
     
     init() {
@@ -15,8 +16,9 @@ class NSClassA: TokenEvent {
     }
     
     /// Event task
-    func doRefreshEvent() {
+    func doRefreshEvent(onComplete: @escaping () -> Void) {
         updateToken()
+        onComplete()
     }
     
     func isValidToken() -> Bool {
@@ -25,5 +27,9 @@ class NSClassA: TokenEvent {
     
     private func updateToken() {
         tokenManager.updateToken()
+    }
+    
+    func printToken() {
+        AppLogger.logInfo(message: tokenManager.token.description)
     }
 }

@@ -17,7 +17,9 @@ class NSTokenManager {
     }
     
     func updateToken() {
-        self.token = DummyTokenManager.getNewToken()
+        DummyTokenManager.getNewToken(onUpdate: { [weak self] token in
+            self?.token = token
+        })
     }
     
     func isLatestToken() -> Bool {

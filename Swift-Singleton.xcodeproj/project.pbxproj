@@ -22,19 +22,30 @@
 		554970B925A846000014DB3B /* DummyTokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554970B825A846000014DB3B /* DummyTokenManager.swift */; };
 		554970BE25A846C20014DB3B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554970BD25A846C20014DB3B /* Extensions.swift */; };
 		554970C325A848150014DB3B /* PreferenceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554970C225A848150014DB3B /* PreferenceHelper.swift */; };
-		554970F125A84CBA0014DB3B /* NSClassA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554970F025A84CBA0014DB3B /* NSClassA.swift */; };
+		554970F125A84CBA0014DB3B /* NSClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554970F025A84CBA0014DB3B /* NSClass.swift */; };
 		554970FC25A854F90014DB3B /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554970FB25A854F90014DB3B /* Event.swift */; };
-		5549710125A855EB0014DB3B /* NSClassB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5549710025A855EB0014DB3B /* NSClassB.swift */; };
-		5549710625A856280014DB3B /* NSHeavyClassC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5549710525A856280014DB3B /* NSHeavyClassC.swift */; };
+		5549710625A856280014DB3B /* NSHeavyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5549710525A856280014DB3B /* NSHeavyClass.swift */; };
 		5549711125A859A30014DB3B /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5549711025A859A30014DB3B /* Example.swift */; };
 		5549711625A859C10014DB3B /* NSExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5549711525A859C10014DB3B /* NSExample.swift */; };
 		5549711C25A8BDC50014DB3B /* STokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5549711B25A8BDC50014DB3B /* STokenManager.swift */; };
 		5549712125A8BF790014DB3B /* UILogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5549712025A8BF790014DB3B /* UILogger.swift */; };
-		5549712925A8C21D0014DB3B /* SHeavyClassC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5549712525A8C21D0014DB3B /* SHeavyClassC.swift */; };
-		5549712A25A8C21D0014DB3B /* SClassA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5549712625A8C21D0014DB3B /* SClassA.swift */; };
+		5549712925A8C21D0014DB3B /* SHeavyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5549712525A8C21D0014DB3B /* SHeavyClass.swift */; };
+		5549712A25A8C21D0014DB3B /* SClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5549712625A8C21D0014DB3B /* SClass.swift */; };
 		5549712B25A8C21D0014DB3B /* SExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5549712725A8C21D0014DB3B /* SExample.swift */; };
-		5549712C25A8C21D0014DB3B /* SClassB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5549712825A8C21D0014DB3B /* SClassB.swift */; };
 		5549713425A8C8CD0014DB3B /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 5549713325A8C8CD0014DB3B /* README.md */; };
+		557BA54F25B1788800D88E30 /* MTPClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557BA54E25B1788800D88E30 /* MTPClass.swift */; };
+		557BA55C25B178AE00D88E30 /* MTPHeavyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557BA55B25B178AE00D88E30 /* MTPHeavyClass.swift */; };
+		557BA56125B178E300D88E30 /* MTPTokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557BA56025B178E300D88E30 /* MTPTokenManager.swift */; };
+		557BA56625B187F000D88E30 /* MTPExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557BA56525B187F000D88E30 /* MTPExample.swift */; };
+		557BA58425B18D6800D88E30 /* MTSClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557BA58325B18D6800D88E30 /* MTSClass.swift */; };
+		557BA58925B18D9000D88E30 /* MTSTokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557BA58825B18D9000D88E30 /* MTSTokenManager.swift */; };
+		557BA58E25B1908300D88E30 /* MTSHeavyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557BA58D25B1908300D88E30 /* MTSHeavyClass.swift */; };
+		557BA59325B190CB00D88E30 /* MTSExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557BA59225B190CB00D88E30 /* MTSExample.swift */; };
+		557BA59925B1A3B400D88E30 /* SATokenManagerInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557BA59825B1A3B400D88E30 /* SATokenManagerInjector.swift */; };
+		557BA59E25B1A3DA00D88E30 /* SATokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557BA59D25B1A3DA00D88E30 /* SATokenManager.swift */; };
+		557BA5A325B1A4B100D88E30 /* SAClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557BA5A225B1A4B100D88E30 /* SAClass.swift */; };
+		557BA5A825B1A4C200D88E30 /* SAHeavyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557BA5A725B1A4C200D88E30 /* SAHeavyClass.swift */; };
+		557BA5AD25B1A5E000D88E30 /* SAExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557BA5AC25B1A5E000D88E30 /* SAExample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,19 +87,30 @@
 		554970B825A846000014DB3B /* DummyTokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyTokenManager.swift; sourceTree = "<group>"; };
 		554970BD25A846C20014DB3B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		554970C225A848150014DB3B /* PreferenceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceHelper.swift; sourceTree = "<group>"; };
-		554970F025A84CBA0014DB3B /* NSClassA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSClassA.swift; sourceTree = "<group>"; };
+		554970F025A84CBA0014DB3B /* NSClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSClass.swift; sourceTree = "<group>"; };
 		554970FB25A854F90014DB3B /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
-		5549710025A855EB0014DB3B /* NSClassB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSClassB.swift; sourceTree = "<group>"; };
-		5549710525A856280014DB3B /* NSHeavyClassC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSHeavyClassC.swift; sourceTree = "<group>"; };
+		5549710525A856280014DB3B /* NSHeavyClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSHeavyClass.swift; sourceTree = "<group>"; };
 		5549711025A859A30014DB3B /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		5549711525A859C10014DB3B /* NSExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSExample.swift; sourceTree = "<group>"; };
 		5549711B25A8BDC50014DB3B /* STokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STokenManager.swift; sourceTree = "<group>"; };
 		5549712025A8BF790014DB3B /* UILogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILogger.swift; sourceTree = "<group>"; };
-		5549712525A8C21D0014DB3B /* SHeavyClassC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHeavyClassC.swift; sourceTree = "<group>"; };
-		5549712625A8C21D0014DB3B /* SClassA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SClassA.swift; sourceTree = "<group>"; };
+		5549712525A8C21D0014DB3B /* SHeavyClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHeavyClass.swift; sourceTree = "<group>"; };
+		5549712625A8C21D0014DB3B /* SClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SClass.swift; sourceTree = "<group>"; };
 		5549712725A8C21D0014DB3B /* SExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SExample.swift; sourceTree = "<group>"; };
-		5549712825A8C21D0014DB3B /* SClassB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SClassB.swift; sourceTree = "<group>"; };
 		5549713325A8C8CD0014DB3B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		557BA54E25B1788800D88E30 /* MTPClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTPClass.swift; sourceTree = "<group>"; };
+		557BA55B25B178AE00D88E30 /* MTPHeavyClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTPHeavyClass.swift; sourceTree = "<group>"; };
+		557BA56025B178E300D88E30 /* MTPTokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTPTokenManager.swift; sourceTree = "<group>"; };
+		557BA56525B187F000D88E30 /* MTPExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTPExample.swift; sourceTree = "<group>"; };
+		557BA58325B18D6800D88E30 /* MTSClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTSClass.swift; sourceTree = "<group>"; };
+		557BA58825B18D9000D88E30 /* MTSTokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTSTokenManager.swift; sourceTree = "<group>"; };
+		557BA58D25B1908300D88E30 /* MTSHeavyClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTSHeavyClass.swift; sourceTree = "<group>"; };
+		557BA59225B190CB00D88E30 /* MTSExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTSExample.swift; sourceTree = "<group>"; };
+		557BA59825B1A3B400D88E30 /* SATokenManagerInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SATokenManagerInjector.swift; sourceTree = "<group>"; };
+		557BA59D25B1A3DA00D88E30 /* SATokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SATokenManager.swift; sourceTree = "<group>"; };
+		557BA5A225B1A4B100D88E30 /* SAClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAClass.swift; sourceTree = "<group>"; };
+		557BA5A725B1A4C200D88E30 /* SAHeavyClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAHeavyClass.swift; sourceTree = "<group>"; };
+		557BA5AC25B1A5E000D88E30 /* SAExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +170,9 @@
 				554970A325A842B10014DB3B /* Utils */,
 				5549709D25A829160014DB3B /* Why-Need-Singleton */,
 				5549711A25A8BD840014DB3B /* Simple-Singleton */,
+				557BA54D25B1785700D88E30 /* Multi-Thread-Problem */,
+				557BA57325B18C9900D88E30 /* Multi-Thread-Solution */,
+				557BA59725B1A33400D88E30 /* Singleton-Alternative */,
 				5549701D25A8253A0014DB3B /* AppDelegate.swift */,
 				5549701F25A8253A0014DB3B /* SceneDelegate.swift */,
 				5549702125A8253A0014DB3B /* ViewController.swift */,
@@ -196,9 +221,8 @@
 			isa = PBXGroup;
 			children = (
 				5549709E25A8294A0014DB3B /* NSTokenManager.swift */,
-				554970F025A84CBA0014DB3B /* NSClassA.swift */,
-				5549710025A855EB0014DB3B /* NSClassB.swift */,
-				5549710525A856280014DB3B /* NSHeavyClassC.swift */,
+				554970F025A84CBA0014DB3B /* NSClass.swift */,
+				5549710525A856280014DB3B /* NSHeavyClass.swift */,
 				5549711525A859C10014DB3B /* NSExample.swift */,
 			);
 			path = "Why-Need-Singleton";
@@ -236,13 +260,46 @@
 		5549711A25A8BD840014DB3B /* Simple-Singleton */ = {
 			isa = PBXGroup;
 			children = (
-				5549712625A8C21D0014DB3B /* SClassA.swift */,
-				5549712825A8C21D0014DB3B /* SClassB.swift */,
-				5549712525A8C21D0014DB3B /* SHeavyClassC.swift */,
+				5549712625A8C21D0014DB3B /* SClass.swift */,
+				5549712525A8C21D0014DB3B /* SHeavyClass.swift */,
 				5549711B25A8BDC50014DB3B /* STokenManager.swift */,
 				5549712725A8C21D0014DB3B /* SExample.swift */,
 			);
 			path = "Simple-Singleton";
+			sourceTree = "<group>";
+		};
+		557BA54D25B1785700D88E30 /* Multi-Thread-Problem */ = {
+			isa = PBXGroup;
+			children = (
+				557BA54E25B1788800D88E30 /* MTPClass.swift */,
+				557BA55B25B178AE00D88E30 /* MTPHeavyClass.swift */,
+				557BA56025B178E300D88E30 /* MTPTokenManager.swift */,
+				557BA56525B187F000D88E30 /* MTPExample.swift */,
+			);
+			path = "Multi-Thread-Problem";
+			sourceTree = "<group>";
+		};
+		557BA57325B18C9900D88E30 /* Multi-Thread-Solution */ = {
+			isa = PBXGroup;
+			children = (
+				557BA58325B18D6800D88E30 /* MTSClass.swift */,
+				557BA58D25B1908300D88E30 /* MTSHeavyClass.swift */,
+				557BA58825B18D9000D88E30 /* MTSTokenManager.swift */,
+				557BA59225B190CB00D88E30 /* MTSExample.swift */,
+			);
+			path = "Multi-Thread-Solution";
+			sourceTree = "<group>";
+		};
+		557BA59725B1A33400D88E30 /* Singleton-Alternative */ = {
+			isa = PBXGroup;
+			children = (
+				557BA59825B1A3B400D88E30 /* SATokenManagerInjector.swift */,
+				557BA59D25B1A3DA00D88E30 /* SATokenManager.swift */,
+				557BA5A225B1A4B100D88E30 /* SAClass.swift */,
+				557BA5A725B1A4C200D88E30 /* SAHeavyClass.swift */,
+				557BA5AC25B1A5E000D88E30 /* SAExample.swift */,
+			);
+			path = "Singleton-Alternative";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -378,27 +435,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				557BA58925B18D9000D88E30 /* MTSTokenManager.swift in Sources */,
 				5549709F25A8294A0014DB3B /* NSTokenManager.swift in Sources */,
+				557BA56125B178E300D88E30 /* MTPTokenManager.swift in Sources */,
 				554970FC25A854F90014DB3B /* Event.swift in Sources */,
 				5549711625A859C10014DB3B /* NSExample.swift in Sources */,
-				5549712C25A8C21D0014DB3B /* SClassB.swift in Sources */,
-				5549710625A856280014DB3B /* NSHeavyClassC.swift in Sources */,
-				554970F125A84CBA0014DB3B /* NSClassA.swift in Sources */,
+				5549710625A856280014DB3B /* NSHeavyClass.swift in Sources */,
+				557BA58E25B1908300D88E30 /* MTSHeavyClass.swift in Sources */,
+				557BA5AD25B1A5E000D88E30 /* SAExample.swift in Sources */,
+				557BA59E25B1A3DA00D88E30 /* SATokenManager.swift in Sources */,
+				554970F125A84CBA0014DB3B /* NSClass.swift in Sources */,
+				557BA55C25B178AE00D88E30 /* MTPHeavyClass.swift in Sources */,
 				554970A525A842EF0014DB3B /* Synchronize.swift in Sources */,
 				5549702225A8253A0014DB3B /* ViewController.swift in Sources */,
+				557BA59325B190CB00D88E30 /* MTSExample.swift in Sources */,
+				557BA56625B187F000D88E30 /* MTPExample.swift in Sources */,
 				554970BE25A846C20014DB3B /* Extensions.swift in Sources */,
 				5549712B25A8C21D0014DB3B /* SExample.swift in Sources */,
-				5549710125A855EB0014DB3B /* NSClassB.swift in Sources */,
 				5549711125A859A30014DB3B /* Example.swift in Sources */,
-				5549712925A8C21D0014DB3B /* SHeavyClassC.swift in Sources */,
+				557BA59925B1A3B400D88E30 /* SATokenManagerInjector.swift in Sources */,
+				5549712925A8C21D0014DB3B /* SHeavyClass.swift in Sources */,
 				554970C325A848150014DB3B /* PreferenceHelper.swift in Sources */,
-				5549712A25A8C21D0014DB3B /* SClassA.swift in Sources */,
+				557BA5A825B1A4C200D88E30 /* SAHeavyClass.swift in Sources */,
+				557BA5A325B1A4B100D88E30 /* SAClass.swift in Sources */,
+				5549712A25A8C21D0014DB3B /* SClass.swift in Sources */,
 				5549713425A8C8CD0014DB3B /* README.md in Sources */,
 				554970B925A846000014DB3B /* DummyTokenManager.swift in Sources */,
 				554970AD25A844AE0014DB3B /* Token.swift in Sources */,
 				5549711C25A8BDC50014DB3B /* STokenManager.swift in Sources */,
 				5549701E25A8253A0014DB3B /* AppDelegate.swift in Sources */,
+				557BA54F25B1788800D88E30 /* MTPClass.swift in Sources */,
 				5549712125A8BF790014DB3B /* UILogger.swift in Sources */,
+				557BA58425B18D6800D88E30 /* MTSClass.swift in Sources */,
 				5549702025A8253A0014DB3B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

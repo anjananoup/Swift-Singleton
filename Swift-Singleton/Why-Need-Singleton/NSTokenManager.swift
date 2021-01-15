@@ -16,9 +16,10 @@ class NSTokenManager {
         self.token = DummyTokenManager.defaultToken
     }
     
-    func updateToken() {
+    func updateToken(onComplete: @escaping () -> Void) {
         DummyTokenManager.getNewToken(onUpdate: { [weak self] token in
             self?.token = token
+            onComplete()
         })
     }
     

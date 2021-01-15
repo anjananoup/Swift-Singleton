@@ -30,9 +30,10 @@ class MTPTokenManager {
         return sToken!
     }
     
-    func updateToken() {
+    func updateToken(onComplete: @escaping () -> Void) {
         DummyTokenManager.getNewToken { [weak self] token in
             self?.token = token
+            onComplete()
         }
     }
     

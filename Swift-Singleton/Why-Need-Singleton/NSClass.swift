@@ -17,16 +17,11 @@ class NSClass: TokenEvent {
     
     /// Event task
     func doRefreshEvent(onComplete: @escaping () -> Void) {
-        updateToken()
-        onComplete()
+        tokenManager.updateToken(onComplete: onComplete)
     }
     
     func isValidToken() -> Bool {
         tokenManager.isLatestToken()
-    }
-    
-    private func updateToken() {
-        tokenManager.updateToken()
     }
     
     func printToken() {

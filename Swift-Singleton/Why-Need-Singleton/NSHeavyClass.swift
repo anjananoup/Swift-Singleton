@@ -20,19 +20,14 @@ class NSHeavyClass: TokenEvent {
         for i in 0..<10 {
             DispatchQueue.global(qos: .userInitiated).async { [weak self] in
                 AppLogger.logInfo(message: "Updating Token sequence: \(i)")
-                self?.updateToken()
+                self?.tokenManager.updateToken(onComplete: onComplete)
                 AppLogger.logInfo(message: "Update Token End sequence: \(i)")
-                onComplete()
             }
         }
     }
     
     func isValidToken() -> Bool {
         tokenManager.isLatestToken()
-    }
-    
-    private func updateToken() {
-        tokenManager.updateToken()
     }
     
     func printToken() {

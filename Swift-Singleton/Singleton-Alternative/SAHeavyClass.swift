@@ -18,8 +18,7 @@ class SAHeavyClass: SATokenManagerInjector, TokenEvent {
         for i in 0..<10 {
             DispatchQueue.global(qos: .userInitiated).async { [weak self] in
                 AppLogger.logInfo(message: "Updating Token sequence: \(i)")
-                self?.updateToken()
-                onComplete()
+                self?.tokenManager.updateToken(onComplete: onComplete)
                 AppLogger.logInfo(message: "Update Token End sequence: \(i)")
             }
         }
@@ -31,9 +30,5 @@ class SAHeavyClass: SATokenManagerInjector, TokenEvent {
     
     func printToken() {
         AppLogger.logInfo(message: tokenManager.token.description)
-    }
-    
-    private func updateToken() {
-        tokenManager.updateToken()
     }
 }

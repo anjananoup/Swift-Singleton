@@ -18,3 +18,6 @@ extension SATokenManagerInjector {
         return sharedAppSATokenManager
     }
 }
+
+
+//fileprivate let sharedAppSATokenManagerTest: SATokenManagerTest = SATokenManagerTest()

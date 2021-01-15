@@ -22,10 +22,11 @@ class SATokenManager {
         AppLogger.logInfo(message: "Object Creation done. Counter: \(globalCounter), Token: \(token)")
     }
     
-    func updateToken() {
+    func updateToken(onComplete: @escaping () -> Void) {
         DummyTokenManager.getNewToken(onUpdate: { [weak self] token in
             self?.concurrentSync.async(flags: .barrier) {
                 self?.token = token
+                onComplete()
             }
         })
     }

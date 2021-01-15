@@ -14,8 +14,7 @@ class SAClass: SATokenManagerInjector, TokenEvent {
     }
     
     func doRefreshEvent(onComplete: @escaping () -> Void) {
-        updateToken()
-        onComplete()
+        tokenManager.updateToken(onComplete: onComplete)
     }
     
     func isValidToken() -> Bool {
@@ -24,9 +23,5 @@ class SAClass: SATokenManagerInjector, TokenEvent {
     
     func printToken() {
         AppLogger.logInfo(message: tokenManager.token.description)
-    }
-    
-    private func updateToken() {
-        tokenManager.updateToken()
     }
 }

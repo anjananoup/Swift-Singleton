@@ -30,4 +30,9 @@ class Swift_SingletonTests: XCTestCase {
         }
     }
 
+    func testSingletone() {
+        let example: Example = SAExample()
+        
+        example.runExample()
+    }
 }

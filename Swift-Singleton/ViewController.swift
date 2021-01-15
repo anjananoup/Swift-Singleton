@@ -27,11 +27,11 @@ class ViewController: UIViewController, UILogger {
         super.viewDidLoad()
         AppLogger.logInfo(message: "App Started")
         
-//        example = NSExample()
+        example = NSExample()
 //        example = SExample()
 //        example = MTPExample()
 //        example = MTSExample()
-        example = SAExample()
+//        example = SAExample()
         
         
         // Add UI Logger

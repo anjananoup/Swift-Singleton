@@ -17,8 +17,7 @@ class MTSClass: TokenEvent {
     
     /// Event task
     func doRefreshEvent(onComplete: @escaping () -> Void) {
-        updateToken()
-        onComplete()
+        tokenManager.updateToken(onComplete: onComplete)
     }
     
     func isValidToken() -> Bool {
@@ -26,7 +25,7 @@ class MTSClass: TokenEvent {
     }
     
     private func updateToken() {
-        tokenManager.updateToken()
+        
     }
     
     func printToken() {

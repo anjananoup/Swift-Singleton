@@ -46,6 +46,7 @@
 		557BA5A325B1A4B100D88E30 /* SAClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557BA5A225B1A4B100D88E30 /* SAClass.swift */; };
 		557BA5A825B1A4C200D88E30 /* SAHeavyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557BA5A725B1A4C200D88E30 /* SAHeavyClass.swift */; };
 		557BA5AD25B1A5E000D88E30 /* SAExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557BA5AC25B1A5E000D88E30 /* SAExample.swift */; };
+		557BA5B225B1B82F00D88E30 /* SATokenManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557BA5B125B1B82F00D88E30 /* SATokenManagerTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +112,7 @@
 		557BA5A225B1A4B100D88E30 /* SAClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAClass.swift; sourceTree = "<group>"; };
 		557BA5A725B1A4C200D88E30 /* SAHeavyClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAHeavyClass.swift; sourceTree = "<group>"; };
 		557BA5AC25B1A5E000D88E30 /* SAExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAExample.swift; sourceTree = "<group>"; };
+		557BA5B125B1B82F00D88E30 /* SATokenManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SATokenManagerTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -298,6 +300,7 @@
 				557BA5A225B1A4B100D88E30 /* SAClass.swift */,
 				557BA5A725B1A4C200D88E30 /* SAHeavyClass.swift */,
 				557BA5AC25B1A5E000D88E30 /* SAExample.swift */,
+				557BA5B125B1B82F00D88E30 /* SATokenManagerTest.swift */,
 			);
 			path = "Singleton-Alternative";
 			sourceTree = "<group>";
@@ -460,6 +463,7 @@
 				557BA5A325B1A4B100D88E30 /* SAClass.swift in Sources */,
 				5549712A25A8C21D0014DB3B /* SClass.swift in Sources */,
 				5549713425A8C8CD0014DB3B /* README.md in Sources */,
+				557BA5B225B1B82F00D88E30 /* SATokenManagerTest.swift in Sources */,
 				554970B925A846000014DB3B /* DummyTokenManager.swift in Sources */,
 				554970AD25A844AE0014DB3B /* Token.swift in Sources */,
 				5549711C25A8BDC50014DB3B /* STokenManager.swift in Sources */,
